@@ -38,7 +38,7 @@ OPTION(BUILD_UTILS 	"Acitvates/Deactivates building utils  libraries" ON)
 #   Find Dependencies
 # ----------------------------------------------------------------------------
  #Add include to dependencies dir
-include_directories(${PROJECT_SOURCE_DIR}/dependencies ${PROJECT_SOURCE_DIR}/dependencies/mmal  ${PROJECT_SOURCE_DIR}/dependencies/vcos)
+include_directories(/opt/vc/include/interface /opt/vc/include/interface/vcos /opt/vc/include/interface/mmal /opt/vc/include )
 #find the mmal libraries(I use conditional because I normally comile in pc)
 
 if(${CMAKE_SYSTEM_PROCESSOR} MATCHES arm*) 
